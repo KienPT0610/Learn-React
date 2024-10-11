@@ -1,0 +1,81 @@
+.side-bar {
+  background-color: #2a213a;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  overflow: hidden;
+  position: fixed;
+
+  .menu-container {
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  .zmp3-logo {
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 120px;
+    height: 50px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../../public/logomp3.png");
+    background-size: 120px;
+    align-self: flex-start;
+  }
+
+  hr {
+    align-self: center;
+    width: 80%;
+    border: 1px solid #4d3f5e;
+  }
+
+  .suggest {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    background-color: #8535b4f2;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+    font-size: 14px;
+    color: white;
+
+    button {
+      padding: 5px 20px;
+      border-radius: 20px;
+      background-color: #a34dd4;
+      border: 1px solid white;
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+
+  .create-playlist {
+    display: flex;
+    border-top: 1px solid #4d3f5e;
+    padding: 30px 20px;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    gap: 10px;
+    cursor: pointer;
+    height: 5%;
+    bottom: 0;
+
+    .plus {
+      display: flex;
+      width: 30px;
+      height: 30px;
+      background-color: #2a213a;
+      border: gray solid 1px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+}

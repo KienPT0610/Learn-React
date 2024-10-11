@@ -1,0 +1,6 @@
+.song-feature {
+    margin-top: 10px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}

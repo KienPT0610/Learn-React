@@ -1,0 +1,37 @@
+.album {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+
+  .album__thumbnail {
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    width: 200px;
+    height: 200px;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+      filter: brightness(0.7);
+    }
+  }
+
+  .album__name {
+    display: flex;
+    align-self: self-start;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    max-height: 20px;
+  }
+}
